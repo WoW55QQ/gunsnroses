@@ -443,6 +443,7 @@
     <None Include="Assets/Invector-3rdPersonController/ItemManager/3D Models/Materials/UIOnTopShader.shader" />
     <None Include="Assets/Invector-3rdPersonController/Shooter/Scripts/DecalManager/Particle.shader" />
     <None Include="Assets/Invector-3rdPersonController/Shooter/Resources/AlphaMask.shader" />
+    <None Include="Assets/LOWPOLY CHARACTERS/README.txt" />
     <None Include="Assets/Invector-3rdPersonController/Shooter/3DModels/Weapons/vRifle/Materials/vEmissionWithMask.shader" />
   </ItemGroup>
   <ItemGroup>
