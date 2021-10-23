@@ -5131,7 +5131,6 @@ MonoBehaviour:
   lockMovement: 0
   lockRotation: 0
   stopMove: 0
-  inTurn: 0
   isJumping: 0
   doingCustomAction: 0
   customAction: 0
@@ -5393,8 +5392,7 @@ MonoBehaviour:
   openCloseEvents: 0
   openCloseWindow: 1
   selectedToolbar: 0
-  defaultDamageEffect:
-  - {fileID: 120346, guid: b8f2fe1ee1a01724cb72f5b0e6bd2eef, type: 3}
+  defaultDamageEffects: []
   customDamageEffects: []
 --- !u!114 &114559234584004984
 MonoBehaviour:
@@ -5411,11 +5409,9 @@ MonoBehaviour:
   openCloseEvents: 1
   openCloseWindow: 0
   selectedToolbar: 0
-  defaultListener:
-    m_PersistentCalls:
-      m_Calls: []
   messagesListeners:
   - Name: EnableWeapon
+    receiveFromGlobal: 0
     onReceiveMessage:
       m_PersistentCalls:
         m_Calls:
@@ -5431,6 +5427,7 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
   - Name: DisableWeapon
+    receiveFromGlobal: 0
     onReceiveMessage:
       m_PersistentCalls:
         m_Calls:
@@ -5823,6 +5820,7 @@ MonoBehaviour:
   openCloseEvents: 0
   openCloseWindow: 0
   selectedToolbar: 0
+  attackObjectName: 
   damage:
     damageValue: 15
     staminaBlockCost: 20
@@ -6352,6 +6350,7 @@ MonoBehaviour:
   openCloseEvents: 0
   openCloseWindow: 0
   selectedToolbar: 0
+  attackObjectName: LeftLowerArm
   damage:
     damageValue: 0
     staminaBlockCost: 0
@@ -6956,7 +6955,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.18891466, y: 0.22220612, z: -0.0021209125}
+  m_ConnectedAnchor: {x: -0.18891466, y: 0.22220612, z: -0.0021210317}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -7078,6 +7077,7 @@ MonoBehaviour:
   openCloseEvents: 0
   openCloseWindow: 0
   selectedToolbar: 0
+  attackObjectName: RightLowerLeg
   damage:
     damageValue: 0
     staminaBlockCost: 0
@@ -7394,7 +7394,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000033136885, y: 0.31248504, z: 0.017783131}
+  m_ConnectedAnchor: {x: -0.0000003369568, y: 0.31248504, z: 0.017783012}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -7557,7 +7557,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.109072946, y: -0.05303463, z: 0.019643215}
+  m_ConnectedAnchor: {x: 0.109072946, y: -0.05303463, z: 0.019643335}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -7826,7 +7826,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00008879029, y: 0.20692256, z: -0.0030711514}
+  m_ConnectedAnchor: {x: 0.000088784705, y: 0.20692256, z: -0.0030712707}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -7992,6 +7992,7 @@ MonoBehaviour:
   openCloseEvents: 0
   openCloseWindow: 0
   selectedToolbar: 0
+  attackObjectName: LeftLowerLeg
   damage:
     damageValue: 0
     staminaBlockCost: 0
@@ -8069,7 +8070,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000013131648, y: 0.47359285, z: -0.000000058673322}
+  m_ConnectedAnchor: {x: -0.00000013178214, y: 0.47359285, z: 0.00000006053597}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -8301,6 +8302,7 @@ MonoBehaviour:
   openCloseEvents: 0
   openCloseWindow: 0
   selectedToolbar: 0
+  attackObjectName: RightLowerArm
   damage:
     damageValue: 0
     staminaBlockCost: 0
@@ -8378,7 +8380,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000033527613, y: 0.28874058, z: 0.000000014901161}
+  m_ConnectedAnchor: {x: 0.00000008568168, y: 0.28874058, z: 0.000000014901161}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:

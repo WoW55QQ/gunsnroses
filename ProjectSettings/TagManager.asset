@@ -30,6 +30,7 @@ TagManager:
   - CoverPoint
   - Interactable
   - AIAction
+  - Tower
   layers:
   - Default
   - TransparentFX
@@ -50,7 +51,7 @@ TagManager:
   - BlockAIRayCast
   - Pushable
   - CoverPoint
-  - 
+  - Tower
   - 
   - 
   - 
