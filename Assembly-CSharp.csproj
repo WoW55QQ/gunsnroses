@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Hovl Studio\Sword slash VFX\Demo scene\CameraHolder.cs" />
     <Compile Include="Assets\Invector-3rdPersonController\Add-ons\Controller_Mobile\Basic\Scripts\InvectorJoystick.cs" />
     <Compile Include="Assets\Invector-3rdPersonController\Add-ons\Controller_Mobile\Basic\Scripts\MoveCamera.cs" />
     <Compile Include="Assets\Invector-3rdPersonController\Add-ons\Controller_Mobile\Basic\Scripts\vButtonOnOFF.cs" />
@@ -446,17 +447,31 @@
     <Compile Include="Assets\Invector-AIController\Scripts\FPSController\Scripts\vFPSWeaponManager.cs" />
     <Compile Include="Assets\Invector-AIController\Scripts\FPSController\Scripts\vFSPShotDirectionControl.cs" />
     <None Include="Assets\Invector-3rdPersonController\Add-ons\Controller_TopDown\README_TOPDOWN.txt" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Demo scene\HDRP and URP.txt" />
+    <None Include="Assets\_www.unityassetcollection.com.txt" />
     <None Include="Assets\Invector-3rdPersonController\Shooter\Changelog_Shooter.txt" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\DissolveNoise.shader" />
     <None Include="Assets\Invector-3rdPersonController\Basic Locomotion\Changelog_Basic.txt" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Add_Fresnel.shader" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Ice.shader" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Distortion.shader" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Blend_TwoSides.shader" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Blend_CenterGlow.shader" />
     <None Include="Assets\Invector-AIController\FSMAI_Changelog.txt" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Demo scene\Readme.txt" />
     <None Include="Assets\Invector-3rdPersonController\Melee Combat\3DModels\Other\Wires\Shaders\alpha_2sided.shader" />
     <None Include="Assets\Invector-3rdPersonController\Melee Combat\Changelog_Melee.txt" />
     <None Include="Assets\Invector-3rdPersonController\ItemManager\3D Models\Materials\UIOnTopShader.shader" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\BlendDistort.shader" />
     <None Include="Assets\Invector-3rdPersonController\Shooter\Scripts\DecalManager\Particle.shader" />
     <None Include="Assets\Invector-3rdPersonController\Add-ons\Controller_Mobile\HOW TO ENABLE-DISABLE UI BUTTONS.txt" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Scroll.shader" />
     <None Include="Assets\Invector-3rdPersonController\Shooter\Resources\AlphaMask.shader" />
     <None Include="Assets\LOWPOLY CHARACTERS\README.txt" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Add_CenterGlow.shader" />
     <None Include="Assets\Invector-3rdPersonController\Shooter\3DModels\Weapons\vRifle\Materials\vEmissionWithMask.shader" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Explosion.shader" />
+    <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\SwordSlash.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
