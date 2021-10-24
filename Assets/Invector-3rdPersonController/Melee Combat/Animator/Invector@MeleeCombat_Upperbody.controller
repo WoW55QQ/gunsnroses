@@ -578,6 +578,7 @@ MonoBehaviour:
   stateInfos: []
   tags:
   - LockMovement
+  - Attack
 --- !u!114 &-165556392869401953
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15113,7 +15114,7 @@ MonoBehaviour:
   activeRagdoll: 0
   senselessTime: 0
   resetAttackTrigger: 0
-  debug: 0
+  debug: 1
 --- !u!114 &114073501179577698
 MonoBehaviour:
   m_ObjectHideFlags: 3

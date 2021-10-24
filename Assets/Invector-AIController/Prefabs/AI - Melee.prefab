@@ -734,8 +734,17 @@ MonoBehaviour:
   openCloseEvents: 0
   openCloseWindow: 1
   selectedToolbar: 0
-  defaultDamageEffects: []
-  customDamageEffects: []
+  defaultDamageEffects:
+  - {fileID: 120346, guid: b8f2fe1ee1a01724cb72f5b0e6bd2eef, type: 3}
+  customDamageEffects:
+  - damageType: Melee
+    customDamageEffect:
+    - {fileID: 120346, guid: b8f2fe1ee1a01724cb72f5b0e6bd2eef, type: 3}
+    rotateToHitDirection: 0
+    attachInReceiver: 0
+    onTriggerEffect:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &114424287431534924
 MonoBehaviour:
   m_ObjectHideFlags: 0
