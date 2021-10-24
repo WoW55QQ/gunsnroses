@@ -440,6 +440,25 @@ MonoBehaviour:
   stateInfos: []
   tags:
   - CustomAction
+--- !u!114 &-2579159217220551546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f223dbf5c9c4b5f46a7dbfa1a717fc27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventTriggers:
+  - eventName: WeakAttack_SwordA_Effect_Play
+    eventTriggerType: 0
+    normalizedTime: 0.2
+  - eventName: WeakAttack_SwordA_Effect_Stop
+    eventTriggerType: 0
+    normalizedTime: 0.6
 --- !u!114 &-2396294371280716722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13854,9 +13873,9 @@ AnimatorStateMachine:
   m_StateMachineTransitions:
   - first: {fileID: 0}
     second: []
-  - first: {fileID: 110790156}
-    second: []
   - first: {fileID: 1107000012077418080}
+    second: []
+  - first: {fileID: 110790156}
     second: []
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 48, y: 0, z: 0}
@@ -28363,6 +28382,7 @@ AnimatorState:
   - {fileID: 114502768508076970}
   - {fileID: 114991373581397324}
   - {fileID: -2396294371280716722}
+  - {fileID: 8459344093533593493}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 1
   m_WriteDefaultValues: 1
@@ -29883,6 +29903,7 @@ AnimatorState:
   - {fileID: 114728052254744588}
   - {fileID: 114615251305782394}
   - {fileID: 691751428624691842}
+  - {fileID: -2579159217220551546}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 1
   m_WriteDefaultValues: 1
@@ -31967,6 +31988,7 @@ AnimatorState:
   - {fileID: 114070303072598888}
   - {fileID: 114614027166260514}
   - {fileID: -1011120266830592130}
+  - {fileID: 4527420973898003275}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 1
   m_WriteDefaultValues: 1
@@ -38932,6 +38954,25 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 504, y: 132, z: 0}
   m_ParentStateMachinePosition: {x: 24, y: 48, z: 0}
   m_DefaultState: {fileID: 2480397090063863493}
+--- !u!114 &4527420973898003275
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f223dbf5c9c4b5f46a7dbfa1a717fc27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventTriggers:
+  - eventName: WeakAttack_SwordA_Effect_Play
+    eventTriggerType: 0
+    normalizedTime: 0.4
+  - eventName: WeakAttack_SwordA_Effect_Stop
+    eventTriggerType: 0
+    normalizedTime: 0.6
 --- !u!114 &4692877133250206593
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -39137,6 +39178,25 @@ MonoBehaviour:
   tags:
   - Airborne
   - IgnoreIK
+--- !u!114 &8459344093533593493
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f223dbf5c9c4b5f46a7dbfa1a717fc27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventTriggers:
+  - eventName: WeakAttack_SwordC_Effect_Play
+    eventTriggerType: 0
+    normalizedTime: 0.2
+  - eventName: WeakAttack_SwordC_Effect_Stop
+    eventTriggerType: 0
+    normalizedTime: 0.5
 --- !u!1102 &8470193490566208466
 AnimatorState:
   serializedVersion: 5
