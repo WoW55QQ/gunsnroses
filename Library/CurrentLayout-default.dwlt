@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1358
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 342}
   m_MaxSize: {x: 12002, y: 8042}
   vertical: 0
-  controlID: 144
+  controlID: 72
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 342}
   m_MaxSize: {x: 8002, y: 8042}
   vertical: 1
-  controlID: 66
+  controlID: 107
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 67
+  controlID: 108
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -582,20 +582,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 62ebfeff005dffff0e5dffff1c5dffff68fbffff543a0000b03a0000683b0000b83b0000
+      m_SelectedIDs: 22420000
+      m_LastClickedID: 16930
+      m_ExpandedIDs: ae74ffff4ee7ffff32fbffff263f0000823f00008a4000003042000036420000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Rings
-        m_OriginalName: Rings
+        m_Name: AI - Melee(Clone)
+        m_OriginalName: AI - Melee(Clone)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -70814
+        m_UserData: -36348
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -644,9 +644,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -73.03969, y: 3.4616408, z: 7.8233647}
+    m_Target: {x: -74.56, y: 3, z: 6.52}
     speed: 2
-    m_Value: {x: -73.03969, y: 3.4616408, z: 7.8233647}
+    m_Value: {x: -74.56, y: 3, z: 6.52}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -692,13 +692,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.033793367, y: 0.07579376, z: -0.002588715, w: -0.99657136}
+    m_Target: {x: -0.2680786, y: 0.081677884, z: -0.022837564, w: -0.9596858}
     speed: 2
-    m_Value: {x: -0.033792563, y: 0.07579195, z: -0.0025886532, w: -0.9965476}
+    m_Value: {x: -0.26807112, y: 0.081675604, z: -0.022836927, w: -0.95965904}
   m_Size:
-    m_Target: 11.028355
+    m_Target: 3.9137447
     speed: 2
-    m_Value: 11.028355
+    m_Value: 3.9137447
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -762,20 +762,20 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/UnityTechnologies/TowerDefenseTemplate/Prefabs/Towers/EMP
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/UnityTechnologies/TowerDefenseTemplate/Prefabs/Towers/EMP
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\unity\project\gunsnroses
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 3}
-    m_SelectedIDs: f83a0100
-    m_LastClickedID: 80632
-    m_ExpandedIDs: 0000000006720000087200000a7200000c7200000e72000010720000127200001472000016720000187200001a7200001c7200001e720000a6730000268500000893000016930000f63a010000ca9a3b
+    scrollPos: {x: 0, y: 335}
+    m_SelectedIDs: aa1c0100
+    m_LastClickedID: 72874
+    m_ExpandedIDs: 000000008e76000090760000927600009476000096760000987600009a7600009c7600009e760000a0760000a2760000a4760000a6760000a8760000aa760000ac760000ae760000b076000096f800002a18010084180100e01801001e1a01000c1c0100281c0100381c0100781c010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -803,7 +803,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000006720000087200000a7200000c7200000e72000010720000127200001472000016720000187200001a7200001c7200001e720000
+    m_ExpandedIDs: 000000008e76000090760000927600009476000096760000987600009a7600009c7600009e760000a0760000a2760000a4760000a6760000a8760000aa760000ac760000ae760000b0760000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -828,21 +828,21 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 4ee7ffff
+    m_LastClickedInstanceID: -6322
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000763a00000043000096440000506000000a560000b25500000000000050c70100949a01007e2d0100f47a0700ca470000ea9a0100c6a80000a28a000006a70000744c000008930000
+    m_ExpandedInstanceIDs: c6230000763a00000043000096440000506000000a560000b25500000000000050c70100949a01007e2d0100f47a0700ca470000ea9a0100c6a80000a28a000006a70000744c000008930000361a01008e1c0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Prick
-      m_OriginalName: Prick
+      m_Name: EMP_2
+      m_OriginalName: EMP_2
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 29914
+      m_UserData: 68154
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0

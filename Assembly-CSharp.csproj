@@ -658,71 +658,28 @@
     <Compile Include="Assets\UnityTechnologies\TowerDefenseTemplate\Scripts\TowerDefense\UI\TowerDefenseInputSchemeSwitcher.cs" />
     <Compile Include="Assets\UnityTechnologies\TowerDefenseTemplate\Scripts\TowerDefense\UI\UrlOpen.cs" />
     <None Include="Assets\Invector-3rdPersonController\Add-ons\Controller_TopDown\README_TOPDOWN.txt" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Demo scene\HDRP and URP.txt" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\GrainGen.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\FXAA3.cginc" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
     <None Include="Assets\_www.unityassetcollection.com.txt" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\LutGen.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
     <None Include="Assets\Invector-3rdPersonController\Shooter\Changelog_Shooter.txt" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\DissolveNoise.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\TAA.cginc" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
     <None Include="Assets\Invector-3rdPersonController\Basic Locomotion\Changelog_Basic.txt" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Add_Fresnel.shader" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Ice.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Distortion.shader" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Blend_TwoSides.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Blend_CenterGlow.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\Third-Party Notices.txt" />
     <None Include="Assets\Invector-AIController\FSMAI_Changelog.txt" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Demo scene\Readme.txt" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
     <None Include="Assets\Invector-3rdPersonController\Melee Combat\3DModels\Other\Wires\Shaders\alpha_2sided.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\ACES.cginc" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\Fonts\Roboto\LICENSE.txt" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\FXAA.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\Fog.shader" />
     <None Include="Assets\Invector-3rdPersonController\Melee Combat\Changelog_Melee.txt" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\MotionBlur.shader" />
     <None Include="Assets\Invector-3rdPersonController\ItemManager\3D Models\Materials\UIOnTopShader.shader" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\BlendDistort.shader" />
     <None Include="Assets\Invector-3rdPersonController\Shooter\Scripts\DecalManager\Particle.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
     <None Include="Assets\Invector-3rdPersonController\Add-ons\Controller_Mobile\HOW TO ENABLE-DISABLE UI BUTTONS.txt" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Scroll.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Editor Resources\UI\Trackball.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
     <None Include="Assets\Invector-3rdPersonController\Shooter\Resources\AlphaMask.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\Common.cginc" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\Bloom.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\LOWPOLY CHARACTERS\README.txt" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\DepthOfField.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\TAA.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\Blit.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\Bloom.cginc" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Add_CenterGlow.shader" />
-    <None Include="Assets\UnityTechnologies\TowerDefenseTemplate\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
     <None Include="Assets\Invector-3rdPersonController\Shooter\3DModels\Weapons\vRifle\Materials\vEmissionWithMask.shader" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Explosion.shader" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\SwordSlash.shader" />
@@ -1260,8 +1217,14 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProGrids">
+      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -1275,26 +1238,11 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProGrids">
-      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
       <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
@@ -1304,6 +1252,15 @@
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>E:/unity/project/gunsnroses/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
