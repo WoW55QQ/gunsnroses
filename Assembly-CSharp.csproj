@@ -63,6 +63,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Hovl Studio\Sword slash VFX\Demo scene\CameraHolder.cs" />
+    <Compile Include="Assets\Invector-3rdPersonController\Add-ons\Builder\Scripts\vBuildManager.cs" />
+    <Compile Include="Assets\Invector-3rdPersonController\Add-ons\Builder\Scripts\vBuildObject.cs" />
+    <Compile Include="Assets\Invector-3rdPersonController\Add-ons\Builder\Scripts\vBuilderCollisionSensor.cs" />
+    <Compile Include="Assets\Invector-3rdPersonController\Add-ons\Builder\Scripts\vTurret.cs" />
     <Compile Include="Assets\Invector-3rdPersonController\Add-ons\Controller_Mobile\Basic\Scripts\InvectorJoystick.cs" />
     <Compile Include="Assets\Invector-3rdPersonController\Add-ons\Controller_Mobile\Basic\Scripts\MoveCamera.cs" />
     <Compile Include="Assets\Invector-3rdPersonController\Add-ons\Controller_Mobile\Basic\Scripts\vButtonOnOFF.cs" />
@@ -659,7 +663,6 @@
     <Compile Include="Assets\UnityTechnologies\TowerDefenseTemplate\Scripts\TowerDefense\UI\UrlOpen.cs" />
     <None Include="Assets\Invector-3rdPersonController\Add-ons\Controller_TopDown\README_TOPDOWN.txt" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Demo scene\HDRP and URP.txt" />
-    <None Include="Assets\_www.unityassetcollection.com.txt" />
     <None Include="Assets\Invector-3rdPersonController\Shooter\Changelog_Shooter.txt" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\DissolveNoise.shader" />
     <None Include="Assets\Invector-3rdPersonController\Basic Locomotion\Changelog_Basic.txt" />
@@ -679,6 +682,7 @@
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Scroll.shader" />
     <None Include="Assets\Invector-3rdPersonController\Shooter\Resources\AlphaMask.shader" />
     <None Include="Assets\LOWPOLY CHARACTERS\README.txt" />
+    <None Include="Assets\_www.unityassetcollection.com.txt" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Add_CenterGlow.shader" />
     <None Include="Assets\Invector-3rdPersonController\Shooter\3DModels\Weapons\vRifle\Materials\vEmissionWithMask.shader" />
     <None Include="Assets\Hovl Studio\Sword slash VFX\Shaders\Explosion.shader" />
