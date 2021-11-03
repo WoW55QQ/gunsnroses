@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 114393120589633644}
   - component: {fileID: 114961102533320220}
   - component: {fileID: 114424287431534924}
+  - component: {fileID: 6794602709649069777}
   m_Layer: 9
   m_Name: AI_Melee_Target_Tower
   m_TagString: Enemy
@@ -764,6 +765,24 @@ MonoBehaviour:
   onDestroy:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6794602709649069777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118815215488870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11408266ec724d198cb402b1cddb1d65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  configuration:
+    maxHealth: 100
+    startingHealth: 100
+    alignment:
+      unityObjectReference: {fileID: 0}
+  targetTransform: {fileID: 0}
 --- !u!1 &1125313060917708
 GameObject:
   m_ObjectHideFlags: 0

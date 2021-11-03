@@ -16,10 +16,10 @@ namespace TowerDefense.Input
 		/// </summary>
 		GameUI m_GameUI;
 
-		/// <summary>
-		/// Register input events
-		/// </summary>
-		protected override void OnEnable()
+        /// <summary>
+        /// Register input events
+        /// </summary>
+        protected override void OnEnable()
 		{
 			base.OnEnable();
 			

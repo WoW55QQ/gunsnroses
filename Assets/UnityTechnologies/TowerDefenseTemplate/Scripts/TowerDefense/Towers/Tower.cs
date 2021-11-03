@@ -87,12 +87,17 @@ namespace TowerDefense.Towers
 		/// </summary>
 		public Action towerDestroyed;
 
-		/// <summary>
-		/// Provide the tower with data to initialize with
-		/// </summary>
-		/// <param name="targetArea">The placement area configuration</param>
-		/// <param name="destination">The destination position</param>
-		public virtual void Initialize(IPlacementArea targetArea, IntVector2 destination)
+        /// <summary>
+        /// Provide the tower with data to initialize with
+        /// </summary>
+        /// <param name="targetArea">The placement area configuration</param>
+        /// <param name="destination">The destination position</param>
+        protected virtual void Awake()
+        {
+            SetLevel(0);
+        }
+
+        public virtual void Initialize(IPlacementArea targetArea, IntVector2 destination)
 		{
 			placementArea = targetArea;
 			gridPosition = destination;
@@ -263,9 +268,10 @@ namespace TowerDefense.Towers
 			ScaleHealth();
 
 			// disable affectors
-			LevelState levelState = LevelManager.instance.levelState;
-			bool initialise = levelState == LevelState.AllEnemiesSpawned || levelState == LevelState.SpawningEnemies;
-			currentTowerLevel.SetAffectorState(initialise);
+			//LevelState levelState = LevelManager.instance.levelState;
+			//bool initialise = levelState == LevelState.AllEnemiesSpawned || levelState == LevelState.SpawningEnemies;
+            //initialise = true;
+            currentTowerLevel.SetAffectorState(true);
 		}
 
 		/// <summary>

@@ -278,3 +278,15 @@ E:\unity\project\gunsnroses\Temp\bin\Debug\UnityEditor.TestRunner.pdb
 E:\unity\project\gunsnroses\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 E:\unity\project\gunsnroses\obj\Debug\Assembly-CSharp.dll
 E:\unity\project\gunsnroses\obj\Debug\Assembly-CSharp.pdb
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.2D.Sprite.Editor.dll
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.2D.Tilemap.Editor.dll
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.Postprocessing.Editor.dll
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.Postprocessing.Runtime.dll
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.ProGrids.dll
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.ProGrids.Editor.dll
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.ProGrids.pdb
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.ProGrids.Editor.pdb
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.Postprocessing.Editor.pdb
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.2D.Sprite.Editor.pdb
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.Postprocessing.Runtime.pdb
+E:\unity\project\gunsnroses\Temp\bin\Debug\Unity.2D.Tilemap.Editor.pdb
