@@ -70,7 +70,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1051247639}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1051247639}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
@@ -145,10 +145,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a1bfe72fbc87d04e885296b53e91c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  mainTarget: {fileID: 0}
   smoothBetweenState: 6
   smoothCameraRotation: 6
+  smoothSwitchSide: 2
   scrollSpeed: 10
+  joystickSensitivity: 1
   cullingLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -157,6 +159,9 @@ MonoBehaviour:
   showGizmos: 0
   startUsingTargetRotation: 1
   startSmooth: 0
+  autoBehindTarget: 0
+  behindTargetDelay: 2
+  behindTargetSmoothRotation: 1
   lockCamera: 0
   offsetMouse: {x: 0, y: 0}
   indexList: 0
@@ -216,6 +221,7 @@ MonoBehaviour:
     fixedAngle: {x: 0, y: 0}
     lookPoints: []
     cameraMode: 0
+  isFreezed: 0
 --- !u!114 &2210254722457875656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,6 +890,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -896,6 +903,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1236,7 +1244,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  removeEventsOnDisable: 0
 --- !u!1 &1198418303132960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,6 +1299,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1304,6 +1312,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1852,6 +1861,7 @@ MonoBehaviour:
   openCloseEvents: 0
   openCloseWindow: 0
   selectedToolbar: 0
+  attackObjectName: RightLowerArm
   damage:
     damageValue: 0
     staminaBlockCost: 0
@@ -1996,6 +2006,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2013,6 +2024,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2534,7 +2546,8 @@ MonoBehaviour:
     prefab, making it easier to transfer attachments from one character to another.
 
 
-    Once you hit Play the attachments will go to the desired bones.'
+    Once
+    you hit Play the attachments will go to the desired bones.'
   inEdit: 0
 --- !u!114 &114671837802725018
 MonoBehaviour:
@@ -2695,6 +2708,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2712,6 +2726,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4067,6 +4082,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4084,6 +4100,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4336,6 +4353,7 @@ MonoBehaviour:
   openCloseEvents: 0
   openCloseWindow: 0
   selectedToolbar: 0
+  attackObjectName: LeftLowerLeg
   damage:
     damageValue: 0
     staminaBlockCost: 0
@@ -4513,7 +4531,6 @@ MonoBehaviour:
   openCloseWindow: 0
   selectedToolbar: 0
   attackObject: {fileID: 0}
-  trigger: {fileID: 65173310881355820}
   damagePercentage: 100
   triggerType: -1
 --- !u!65 &65173310881355820
@@ -4692,6 +4709,7 @@ MonoBehaviour:
   openCloseEvents: 0
   openCloseWindow: 0
   selectedToolbar: 0
+  attackObjectName: RightLowerLeg
   damage:
     damageValue: 0
     staminaBlockCost: 0
@@ -4875,6 +4893,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4886,6 +4905,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -4993,8 +5013,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   header: COMMENT
-  comment: This example has both Melee and Shooter features included and working together,
-    you have several options to play with to create something unique.
+  comment: This example has both Melee and Shooter features included and working
+    together, you have several options to play with to create something unique.
   inEdit: 0
 --- !u!95 &95325852729759760
 Animator:
@@ -5096,6 +5116,9 @@ MonoBehaviour:
   _onActiveRagdoll:
     m_PersistentCalls:
       m_Calls: []
+  onDisableRagdoll:
+    m_PersistentCalls:
+      m_Calls: []
   onActionEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -5110,6 +5133,9 @@ MonoBehaviour:
   sprintStamina: 30
   jumpStamina: 30
   rollStamina: 25
+  OnRoll:
+    m_PersistentCalls:
+      m_Calls: []
   OnJump:
     m_PersistentCalls:
       m_Calls: []
@@ -5132,15 +5158,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   headDetect: 0.95
-  stopMoveLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  stopMoveHeight: 0.65
-  stopMoveDistance: 0.1
-  useRootMotion: 0
+  speedMultiplier: 1
+  rotateByWorld: 0
   locomotionType: 0
-  disableAnimations: 0
-  useLeanMovement: 1
   freeSpeed:
     movementSmooth: 6
     animationSmooth: 0.2
@@ -5161,12 +5181,16 @@ MonoBehaviour:
     runningSpeed: 4
     sprintSpeed: 6
     crouchSpeed: 2
-  rotateByWorld: 0
-  turnOnSpotAnim: 1
+  disableAnimations: 0
+  useRootMotion: 0
+  useLeanMovementAnim: 1
+  leanSmooth: 0.05
+  useTurnOnSpotAnim: 1
   randomIdleTime: 0
   useContinuousSprint: 1
   sprintOnlyFree: 1
   crouchHeightReduction: 1.5
+  customFixedTimeStep: 2
   jumpWithRigidbodyForce: 0
   jumpAndRotate: 1
   jumpTimer: 0.3
@@ -5180,28 +5204,45 @@ MonoBehaviour:
   fallMinVerticalVelocity: -10
   fallDamage: 10
   useRollRootMotion: 1
+  rollTransition: 0.25
   rollControl: 1
   rollSpeed: 0
   rollRotationSpeed: 10
   rollUseGravity: 1
   rollUseGravityTime: 0.2
   timeToRollAgain: 0.75
+  noDamageWhileRolling: 1
+  noActiveRagdollWhileRolling: 1
   groundCheckMethod: 1
   groundDetectionDistance: 10
   useSnapGround: 1
   snapPower: 0.5
   groundMinDistance: 0.1
   groundMaxDistance: 0.5
+  useSlopeLimit: 1
   slopeLimit: 75
+  stopSlopeMargin: 20
+  slopeSidewaysSmooth: 2
+  slopeMinDistance: 0
+  slopeMaxDistance: 1.5
+  slopeLimitHeight: 0.2
+  steepSlopeAhead: 0
   useSlide: 1
   slideDownVelocity: 7
+  slideDownSmooth: 2
   slideSidewaysVelocity: 5
   slidingEnterTime: 0.1
+  rotateSlopeEnterTime: 0.1
+  rotateDownSlopeSmooth: 8
   useStepOffset: 1
   stepOffsetMaxHeight: 0.5
   stepOffsetMinHeight: 0
   stepOffsetDistance: 0.1
   debugWindow: 0
+  _animatorStateInfos:
+    debug: 0
+    animator: {fileID: 0}
+    stateInfos: []
   applyingStepOffset: 0
   inputSmooth: {x: 0, y: 0, z: 0}
   moveDirection: {x: 0, y: 0, z: 0}
@@ -5223,9 +5264,11 @@ MonoBehaviour:
   selectedToolbar: 0
   unlockCursorOnStart: 0
   showCursorOnStart: 0
+  toggleWalk: 301
   horizontalInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Horizontal
     keyboardAxis: 0
     joystick: LeftAnalogHorizontal
@@ -5241,6 +5284,7 @@ MonoBehaviour:
   verticallInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Vertical
     keyboardAxis: 0
     joystick: LeftAnalogVertical
@@ -5253,54 +5297,10 @@ MonoBehaviour:
     timeButtonWasPressed: 0
     lastTimeTheButtonWasPressed: 0
     inButtomTimer: 0
-  jumpInput:
-    useInput: 1
-    isAxisInUse: 0
-    keyboard: Space
-    keyboardAxis: 0
-    joystick: X
-    joystickAxis: 0
-    mobile: X
-    mobileAxis: 0
-    joystickAxisInvert: 0
-    keyboardAxisInvert: 0
-    mobileAxisInvert: 0
-    timeButtonWasPressed: 0
-    lastTimeTheButtonWasPressed: 0
-    inButtomTimer: 0
-  rollInput:
-    useInput: 1
-    isAxisInUse: 0
-    keyboard: Q
-    keyboardAxis: 0
-    joystick: B
-    joystickAxis: 0
-    mobile: B
-    mobileAxis: 0
-    joystickAxisInvert: 0
-    keyboardAxisInvert: 0
-    mobileAxisInvert: 0
-    timeButtonWasPressed: 0
-    lastTimeTheButtonWasPressed: 0
-    inButtomTimer: 0
-  strafeInput:
-    useInput: 1
-    isAxisInUse: 0
-    keyboard: Tab
-    keyboardAxis: 0
-    joystick: RightStickClick
-    joystickAxis: 0
-    mobile: RightStickClick
-    mobileAxis: 0
-    joystickAxisInvert: 0
-    keyboardAxisInvert: 0
-    mobileAxisInvert: 0
-    timeButtonWasPressed: 0
-    lastTimeTheButtonWasPressed: 0
-    inButtomTimer: 0
   sprintInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: LeftShift
     keyboardAxis: 0
     joystick: LeftStickClick
@@ -5316,11 +5316,60 @@ MonoBehaviour:
   crouchInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: C
     keyboardAxis: 0
     joystick: Y
     joystickAxis: 0
     mobile: Y
+    mobileAxis: 0
+    joystickAxisInvert: 0
+    keyboardAxisInvert: 0
+    mobileAxisInvert: 0
+    timeButtonWasPressed: 0
+    lastTimeTheButtonWasPressed: 0
+    inButtomTimer: 0
+  strafeInput:
+    useInput: 1
+    isAxisInUse: 0
+    isUnityInput: 0
+    keyboard: Tab
+    keyboardAxis: 0
+    joystick: RightStickClick
+    joystickAxis: 0
+    mobile: RightStickClick
+    mobileAxis: 0
+    joystickAxisInvert: 0
+    keyboardAxisInvert: 0
+    mobileAxisInvert: 0
+    timeButtonWasPressed: 0
+    lastTimeTheButtonWasPressed: 0
+    inButtomTimer: 0
+  jumpInput:
+    useInput: 1
+    isAxisInUse: 0
+    isUnityInput: 0
+    keyboard: Space
+    keyboardAxis: 0
+    joystick: X
+    joystickAxis: 0
+    mobile: X
+    mobileAxis: 0
+    joystickAxisInvert: 0
+    keyboardAxisInvert: 0
+    mobileAxisInvert: 0
+    timeButtonWasPressed: 0
+    lastTimeTheButtonWasPressed: 0
+    inButtomTimer: 0
+  rollInput:
+    useInput: 1
+    isAxisInUse: 0
+    isUnityInput: 0
+    keyboard: Q
+    keyboardAxis: 0
+    joystick: B
+    joystickAxis: 0
+    mobile: B
     mobileAxis: 0
     joystickAxisInvert: 0
     keyboardAxisInvert: 0
@@ -5335,6 +5384,7 @@ MonoBehaviour:
   rotateCameraXInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Mouse X
     keyboardAxis: 0
     joystick: RightAnalogHorizontal
@@ -5350,6 +5400,7 @@ MonoBehaviour:
   rotateCameraYInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Mouse Y
     keyboardAxis: 0
     joystick: RightAnalogVertical
@@ -5365,6 +5416,7 @@ MonoBehaviour:
   cameraZoomInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Mouse ScrollWheel
     keyboardAxis: 0
     joystick: 
@@ -5401,6 +5453,7 @@ MonoBehaviour:
   weakAttackInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Mouse0
     keyboardAxis: 0
     joystick: RB
@@ -5416,6 +5469,7 @@ MonoBehaviour:
   strongAttackInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Alpha1
     keyboardAxis: 0
     joystick: RT
@@ -5431,6 +5485,7 @@ MonoBehaviour:
   blockInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Mouse1
     keyboardAxis: 0
     joystick: LB
@@ -5447,6 +5502,7 @@ MonoBehaviour:
   aimInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Mouse1
     keyboardAxis: 0
     joystick: LT
@@ -5462,6 +5518,7 @@ MonoBehaviour:
   shotInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Mouse0
     keyboardAxis: 0
     joystick: RT
@@ -5477,6 +5534,7 @@ MonoBehaviour:
   reloadInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: R
     keyboardAxis: 0
     joystick: LB
@@ -5492,6 +5550,7 @@ MonoBehaviour:
   switchCameraSideInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Tab
     keyboardAxis: 0
     joystick: RightStickClick
@@ -5507,6 +5566,7 @@ MonoBehaviour:
   scopeViewInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Z
     keyboardAxis: 0
     joystick: RB
@@ -5551,24 +5611,61 @@ MonoBehaviour:
   blockAimLayer:
     serializedVersion: 2
     m_Bits: 1
-  blockAimOffsetY: 0.35
-  blockAimOffsetX: 0.35
   useCancelReload: 1
   ignoreReacionIDList: ffffffff
-  minDistanceToAim: 1
+  useCheckAim: 1
   checkAimRadius: 0.1
+  checkAimOffsetZ: 0
+  checkAimOffsetSmooth: 2
+  checkAimStandingOffsetStartY: 0
+  checkAimStandingOffsetStartX: 0.2
+  checkAimStandingOffsetEndY: 0
+  checkAimStandingOffsetEndX: 0
+  checkAimCrouchedOffsetStartY: 0
+  checkAimCrouchedOffsetStartX: 0.2
+  checkAimCrouchedOffsetEndY: 0
+  checkAimCrouchedOffsetEndX: 0
+  keepAimingWhenReload: 0
   alwaysAiming: 0
   onlyWalkWhenAiming: 1
   useDefaultMovesetWhenNotAiming: 0
+  armIKSmoothIn: 10
+  armIKSmoothOut: 25
+  armIKCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   onlyArmsSpeed: 25
   smoothArmIKRotation: 8
-  smoothArmAlignWeight: 4
+  smoothArmWeight: 24
   maxAimAngle: 60
   raycastAimTarget: 1
+  alignArmToHitPoint: 1
   applyRecoilToCamera: 1
   useLeftIK: 1
   useRightIK: 1
   weaponIKAdjustList: {fileID: 11400000, guid: 5df8acf8f1c21fa48b7c49ccbf1ef60a, type: 2}
+  ikAdjustSmooth: 20
   useAmmoDisplay: 1
   leftWeaponAmmoDisplayID: -1
   rightWeaponAmmoDisplayID: 1
@@ -5714,6 +5811,7 @@ MonoBehaviour:
   offsetSpine: {x: 0, y: 0}
   offsetHead: {x: 0, y: 0}
   followCamera: 1
+  _freezeLookPoint: 0
   alwaysFollowCamera: 0
   cancelTrackOutOfAngle: 1
   considerHeadAnimationForward: 0
@@ -5756,6 +5854,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   keepRagdolled: 0
+  invertGetUpAnim: 0
   _ignoreGetUpAnimation: 0
   removePhysicsAfterDie: 0
   disableColliders: 1
@@ -5896,6 +5995,9 @@ MonoBehaviour:
   onRemoveItemID:
     m_PersistentCalls:
       m_Calls: []
+  onCollectItem:
+    m_PersistentCalls:
+      m_Calls: []
   onDestroyItem:
     m_PersistentCalls:
       m_Calls: []
@@ -5994,12 +6096,16 @@ MonoBehaviour:
   onFinishUnequipItem:
     m_PersistentCalls:
       m_Calls: []
+  onSetLockedToEquip:
+    m_PersistentCalls:
+      m_Calls: []
   onSaveItems:
     m_PersistentCalls:
       m_Calls: []
   onLoadItems:
     m_PersistentCalls:
       m_Calls: []
+  items: []
   itemsFilter: 
 --- !u!114 &114285604826030240
 MonoBehaviour:
@@ -6018,12 +6124,13 @@ MonoBehaviour:
   animationType: 0
   debugTextureName: 0
   _volume: 1
+  _spawnParticle: 1
+  _spawnStepMark: 1
+  _useTriggerEnter: 1
   leftFootTrigger: {fileID: 114727062774575258}
   rightFootTrigger: {fileID: 114569569239158666}
   currentStep: {fileID: 0}
   footStepTriggers: []
-  detectionTags:
-    tags: []
 --- !u!114 &114775585505376916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6071,7 +6178,6 @@ MonoBehaviour:
   actionStarted: 0
   isLockTriggerEvents: 0
   colliders: []
-  mainCamera: {fileID: 0}
   OnEnterTriggerAction:
     m_PersistentCalls:
       m_Calls: []
@@ -6134,6 +6240,7 @@ MonoBehaviour:
   verticallInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Vertical
     keyboardAxis: 0
     joystick: LeftAnalogVertical
@@ -6149,6 +6256,7 @@ MonoBehaviour:
   enterInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: E
     keyboardAxis: 0
     joystick: A
@@ -6164,6 +6272,7 @@ MonoBehaviour:
   exitInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Space
     keyboardAxis: 0
     joystick: B
@@ -6179,6 +6288,7 @@ MonoBehaviour:
   fastClimbInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: LeftShift
     keyboardAxis: 0
     joystick: LeftStickClick
@@ -6194,6 +6304,7 @@ MonoBehaviour:
   slideDownInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Q
     keyboardAxis: 0
     joystick: X
@@ -6276,6 +6387,7 @@ MonoBehaviour:
   lockOnInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Tab
     keyboardAxis: 0
     joystick: RightStickClick
@@ -6291,6 +6403,7 @@ MonoBehaviour:
   nexTargetInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: X
     keyboardAxis: 0
     joystick: RightAnalogHorizontal
@@ -6306,6 +6419,7 @@ MonoBehaviour:
   previousTargetInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: Z
     keyboardAxis: 0
     joystick: RightAnalogHorizontal
@@ -6346,6 +6460,7 @@ MonoBehaviour:
   hideAndDrawWeaponsInput:
     useInput: 1
     isAxisInUse: 0
+    isUnityInput: 0
     keyboard: H
     keyboardAxis: 0
     joystick: LB
@@ -6415,7 +6530,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  removeEventsOnDisable: 0
 --- !u!114 &114412044412833908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6431,11 +6545,9 @@ MonoBehaviour:
   openCloseEvents: 1
   openCloseWindow: 0
   selectedToolbar: 0
-  defaultListener:
-    m_PersistentCalls:
-      m_Calls: []
   messagesListeners:
   - Name: ForceHideWeapons
+    receiveFromGlobal: 0
     onReceiveMessage:
       m_PersistentCalls:
         m_Calls:
@@ -6462,6 +6574,7 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
   - Name: UnlockWeapons
+    receiveFromGlobal: 0
     onReceiveMessage:
       m_PersistentCalls:
         m_Calls:
@@ -6530,6 +6643,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6541,6 +6655,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -6863,6 +6978,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6875,6 +6991,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -7222,6 +7339,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7239,6 +7357,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8224,6 +8343,7 @@ MonoBehaviour:
   openCloseEvents: 0
   openCloseWindow: 0
   selectedToolbar: 0
+  attackObjectName: LeftLowerArm
   damage:
     damageValue: 0
     staminaBlockCost: 0
@@ -8345,6 +8465,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8357,6 +8478,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8620,7 +8742,7 @@ Transform:
   - {fileID: 5283036442143082665}
   - {fileID: 8625551576953563993}
   - {fileID: 1051247643}
-  - {fileID: 5806788334255867849}
+  - {fileID: 5206363984805835362}
   m_Father: {fileID: 4427822890153906}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8698,9 +8820,10 @@ Camera:
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -8843,6 +8966,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8854,6 +8978,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -8942,7 +9067,6 @@ MonoBehaviour:
   openCloseWindow: 0
   selectedToolbar: 0
   attackObject: {fileID: 0}
-  trigger: {fileID: 8744824168072730855}
   damagePercentage: 100
   triggerType: 3
 --- !u!65 &8744824168072730855
@@ -9036,7 +9160,6 @@ MonoBehaviour:
   openCloseWindow: 0
   selectedToolbar: 0
   attackObject: {fileID: 0}
-  trigger: {fileID: 8742674664106131057}
   damagePercentage: 100
   triggerType: 3
 --- !u!65 &8742674664106131057
@@ -9130,7 +9253,6 @@ MonoBehaviour:
   openCloseWindow: 0
   selectedToolbar: 0
   attackObject: {fileID: 0}
-  trigger: {fileID: 8742824373980543181}
   damagePercentage: 100
   triggerType: 3
 --- !u!65 &8742824373980543181
@@ -9923,11 +10045,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1789445608270938811, guid: 041726e4330290b43ac95e1cf84d3636,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707727118601511313, guid: 041726e4330290b43ac95e1cf84d3636,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 041726e4330290b43ac95e1cf84d3636, type: 3}
---- !u!224 &5806788334255867849 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 22443792, guid: 041726e4330290b43ac95e1cf84d3636,
+--- !u!4 &5206363984805835362 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1789445608270938811, guid: 041726e4330290b43ac95e1cf84d3636,
     type: 3}
   m_PrefabInstance: {fileID: 5806788334242132185}
   m_PrefabAsset: {fileID: 0}
